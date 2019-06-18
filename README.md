@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # RealReviewReactHooks
 RealReview app rewritten using react hooks and asp.net core web api(RealReviewWebAPI repo) for backend
 ## Real Review Web App: ##
