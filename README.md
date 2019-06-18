@@ -11,11 +11,11 @@ We all read reviews and there are many of them for a given restaurant or any oth
 
 ## Technologies Used: ##
 
-React JS 
-React Hooks
-React-Bootstrap controls
-Bootstrap 4
-axios for API calls
+1. React JS 
+2. React Hooks
+3. React-Bootstrap controls
+4. Bootstrap 4
+5. axios for API calls
 
 ## Things Needed: ##
 
