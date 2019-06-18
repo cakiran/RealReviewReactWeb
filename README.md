@@ -1,4 +1,4 @@
-# RealReviewReactWeb
+# RealReview React Web
 RealReview app rewritten using react hooks and asp.net core web api(RealReviewWebAPI repo) for backend. This app works by using backend api calls to RealReviewWebAPI project. Both these projects can be setup in local system and the Real Review experience can be had using a react web application.
 
 ## Real Review Web App: ##
