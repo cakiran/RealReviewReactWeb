@@ -2,18 +2,18 @@ import React from 'react';
 import { ProgressBar } from 'react-bootstrap';
 
 function RealReviewScore(reviewData) {
-    const now = reviewData.reviewData.realReviewScore ? reviewData.reviewData.realReviewScore : 0;
+    const now = reviewData.realReviewScore ? reviewData.realReviewScore : 0;
     return (
         <div>
             <div className="card  card-block">
-                <div className="card-header text-white bg-info">Reviews - {reviewData.reviewData.name}</div>
+                <div className="card-header text-white bg-info">Reviews - {reviewData.name}</div>
                 <div className="card-body">
                     <ul className="list-group">
                         {
                             reviewData.isRealReviewScoreLoading === true ? <li className="list-group-item">Loading...</li> :
-                                reviewData.reviewData.reviews.map((item, index) => (
-                                    <li key={index} className="list-group-item">{item}</li>
-                                ))
+                            reviewData.reviews.map((item, index) => (
+                                <li key={index} className="list-group-item">{item}</li>
+                            ))
                         }
                     </ul>
                 </div>
@@ -32,23 +32,21 @@ function RealReviewScore(reviewData) {
                         :
                         <div class="d-flex  ">
                             <div class="p-2 m-1 flex-fill border border-light rounded align-self-center ">
-                                <span className="text-info">Accuracy:</span>{' '}{reviewData.reviewData.accuracy}
+                                <span className="text-info">Accuracy:</span>{' '}{reviewData.accuracy}
                             </div>
                             <div class="p-2 m-1 flex-fill border border-light rounded align-self-center ">
-                                <span className="text-info">Area Under ROCCurve:</span>{' '}{reviewData.reviewData.areaUnderROCCurve}
+                            <span className="text-info">Area Under ROCCurve:</span>{' '}{reviewData.areaUnderROCCurve}
                             </div>
                             <div class="p-2 m-1 flex-fill border border-light rounded align-self-center ">
-                                <span className="text-info"> F1 Score:</span>{' '}{reviewData.reviewData.f1Score}
+                            <span className="text-info"> F1 Score:</span>{' '}{reviewData.f1Score}
                             </div>
                         </div>
-
                     }
-
                 </div>
                 <div className="card-body  d-flex flex-column">
                     <div class="d-flex  ">
                         <div class="p-2 m-1 flex-fill border border-info rounded align-self-center ">
-                            <ProgressBar animated className="progress-bar-orange" variant="warning" striped now={now} label={`${now}`} />
+                            <ProgressBar animated  className="progress-bar-orange" variant="warning" striped  now={now} label={`${now}`} />
                         </div>
                     </div>
                 </div>
